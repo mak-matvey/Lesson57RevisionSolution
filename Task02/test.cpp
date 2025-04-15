@@ -97,14 +97,14 @@ void test12() {
 
 // max int type number (максимальное значение типа int)
 void test13() {
-	int number = 2'147'483'647;
+	int number = INT_MAX;
 	bool expected = false;
 	print_test(number, expected, "test13");
 }
 
 // min int type number (минимальное значение типа int)
 void test14() {
-	int number = -2'147'483'648;
+	int number = INT_MIN;
 	bool expected = false;
 	print_test(number, expected, "test14");
 }
