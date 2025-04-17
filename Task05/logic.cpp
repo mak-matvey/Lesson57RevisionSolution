@@ -14,14 +14,14 @@
 
 int sum_absolute_values_of_negative_elements(int* array, int size) {
 	
-	if (size <= 0 || array == nullptr)
+	if (size <= 0 || !array)
 	{
 		return 0;
 	}
 
 	if (size == 1)
 	{
-		return array[0] < 0 ? abs(array[0]) : 0;
+		return *array < 0 ? abs(*array) : 0;
 	}
 
 	int sum = sum_absolute_values_of_negative_elements(array, size - 1);
